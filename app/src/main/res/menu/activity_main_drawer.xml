@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/mainmenu_group_video">
+        <menu>
+        <item
+            android:id="@+id/menu_live"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/mainmenu_live" />
+        <item
+            android:id="@+id/menu_upload"
+            android:icon="@android:drawable/ic_menu_upload"
+            android:title="@string/mainmenu_upload" />
+            <item
+                android:id="@+id/menu_videos"
+                android:icon="@android:drawable/presence_video_busy"
+                android:title="我的视频" />
+            </menu>
+    </item>
+    <item android:title="@string/mainmenu_group_follower">
+        <menu>
+        <item
+            android:id="@+id/menu_approve"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="@string/mainmenu_approve" />
+        <item
+            android:id="@+id/menu_follower"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="@string/mainmenu_follower" />
+            </menu>
+    </item>
+
+    <item android:title="@string/mainmenu_group_personal">
+        <menu>
+            <!--item
+                android:id="@+id/menu_changepswd"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="@string/mainmenu_changepswd" /-->
+            <item
+                android:id="@+id/menu_logout"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="@string/mainmenu_logout" />
+        </menu>
+    </item>
+
+</menu>

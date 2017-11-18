@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:key="videoResolution"
+        android:title="直播分辨率"
+        android:entries="@array/pref_video_resolution"
+        android:entryValues="@array/pref_video_resolution"
+        android:defaultValue="1920x1080"/>
+    <SwitchPreference android:key="defaultLandscape"
+        android:title="横屏拍摄"
+        android:summary="关闭该选项则使用竖屏拍摄"
+        android:defaultValue="true"/>
+    <SwitchPreference android:key="onlyWifiAllowed"
+        android:title="只允许在Wi-Fi下直播和上传"
+        android:summary="建议开启，如果关闭将消耗大量流量"
+        android:defaultValue="true"/>
+    <EditTextPreference android:key="reconnectTimeout"
+        android:title="断线自动重连次数"
+        android:defaultValue="5"
+        android:inputType="number"/>
+</PreferenceScreen>
